@@ -11,7 +11,9 @@
     "publish": "node bin/dociql -l eevee.png -t docs config.yml",
     "test": "nyc --lines 85 --reporter=lcovonly --reporter=text-summary mocha && node bin/dociql -l eevee.png config.yml",
     "develop": "dociql -d",
-    "start": "dociql -s"
+    "start": "dociql -s",
+    "graphql-core": "node bin/dociql -l eevee.png graphql-core.yml -t doc/graphql-core",
+    "graphql-enterprise": "node bin/dociql -l eevee.png graphql-enterprise.yml -t doc/graphql-enterprise"
   },
   "repository": {
     "type": "git",
